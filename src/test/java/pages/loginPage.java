@@ -22,6 +22,7 @@ public class loginPage {
     @FindBy(id="spanMessage")
     public WebElement messageLabel;
 
+
     public void doLogin(String username,String password) {
         this.usernameLoginInput.sendKeys(username);
         this.passwordLoginInput.sendKeys(password);
