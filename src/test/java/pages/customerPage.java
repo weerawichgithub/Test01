@@ -20,7 +20,7 @@ public class customerPage {
     @FindBy(xpath="//*[@id=\"fadein\"]/div[1]/div/div[2]/div[2]/div/form/div[3]/button")
     public WebElement loginButton;
 
-    public void goLogin(String username,String password) {
+    public void doLogin(String username,String password) {
         this.usernameLoginInput.sendKeys(username);
         this.passwordLoginInput.sendKeys(password);
         this.loginButton.click();
