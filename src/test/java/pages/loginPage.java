@@ -10,7 +10,6 @@ public class loginPage {
 
     public loginPage() {PageFactory.initElements(Driver.getDriver(),this);}
 
-
     @FindBy(id="txtUsername")
     public WebElement usernameLoginInput;
 
@@ -24,7 +23,7 @@ public class loginPage {
     public WebElement messageLabel;
 
 
-    public void goLogin(String username,String password) {
+    public void doLogin(String username,String password) {
         this.usernameLoginInput.sendKeys(username);
         this.passwordLoginInput.sendKeys(password);
         this.loginButton.click();
