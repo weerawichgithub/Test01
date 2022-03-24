@@ -45,12 +45,10 @@ public class Driver {
 		return driver;
 	}
 
-	// close/quit browser
-	@AfterMethod
-	public void tearDown() {
+	public static void tearDown() {
 		if (driver != null) {
 			driver.close();
-			// driver.quit();
+			driver.quit();
 			driver = null;
 		}
 	}
