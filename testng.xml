@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test name="CRW001_LoginTesting">
+
+        <parameter name = "username" value="user@phptravels.com"/>
+        <parameter name = "password" value="demouser"/>
+        <classes>
+            <class name="test.CRW001_LoginTesting">
+                <methods>
+                    <include name="test2"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
